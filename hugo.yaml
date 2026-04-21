@@ -1,0 +1,56 @@
+baseURL: "https://purviewsimplified.com/"
+languageCode: "en-gb"
+title: "Purview Simplified"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Purview Simplified"
+  description: "Plain-English writing on Microsoft Purview and M365 compliance."
+  keywords: [Purview, Microsoft 365, Compliance, DLP, Information Protection]
+  author: "Joe Leighton"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Purview Simplified"
+    Content: "Plain-English writing on Microsoft Purview and M365 compliance. Written by Joe Leighton."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/joeleighton96"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

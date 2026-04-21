@@ -1,0 +1,11 @@
+# Hugo build output — rebuilt on every deploy, no need to track
+/public/
+/resources/
+.hugo_build.lock
+
+# macOS noise
+.DS_Store
+
+# Editor noise
+.vscode/
+*.swp

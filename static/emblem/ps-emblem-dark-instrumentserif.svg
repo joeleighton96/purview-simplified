@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&amp;display=swap");
+      .ps { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-size: 82px; }
+    </style>
+  </defs>
+  <rect width="128" height="128" fill="#0a0a0a"/>
+  <text x="64" y="80" text-anchor="middle" fill="#ffffff" class="ps">PS</text>
+  <path d="M 40 99.6 Q 64 97.4, 88 97.8 Q 64 99.2, 40 99.6 Z" fill="#ffffff"/>
+</svg>

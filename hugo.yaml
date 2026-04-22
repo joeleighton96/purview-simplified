@@ -30,6 +30,24 @@ params:
   ShowWordCount: true
   ShowToc: true
 
+  # Site header: wordmark image only (hides the text title)
+  label:
+    text: ""
+    icon: /emblem/ps-wordmark-mono-black.svg
+    iconHeight: 36
+
+  # Favicons and touch icons
+  assets:
+    favicon: /emblem/favicon-32.png
+    favicon16x16: /emblem/favicon-32.png
+    favicon32x32: /emblem/favicon-32.png
+    apple_touch_icon: /emblem/apple-touch-icon-180.png
+    safari_pinned_tab: /emblem/ps-emblem-mono-black.svg
+
+  # Default Open Graph / social share image
+  images:
+    - /emblem/ps-lockup-og-1200x630.png
+
   homeInfoParams:
     Title: "Purview Simplified"
     Content: "Plain-English writing on Microsoft Purview and M365 compliance. Written by Joe Leighton."

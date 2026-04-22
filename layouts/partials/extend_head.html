@@ -1,0 +1,23 @@
+{{/* Custom head extensions. Inverts the wordmark in dark mode and keeps
+     layout tidy alongside the theme toggle and menu. */}}
+<style>
+  /* Wordmark logo sizing and spacing */
+  .logo a img {
+    height: 36px;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  /* Invert the monochrome wordmark SVG when the site is in dark mode */
+  html.dark .logo a img,
+  .dark .logo a img {
+    filter: invert(1);
+  }
+
+  /* Tighten the gap that would otherwise follow an empty label text node */
+  .logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+  }
+</style>

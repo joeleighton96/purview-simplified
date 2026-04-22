@@ -8,9 +8,10 @@
     vertical-align: middle;
   }
 
-  /* Invert the monochrome wordmark SVG when the site is in dark mode */
-  html.dark .logo a img,
-  .dark .logo a img {
+  /* Invert the monochrome wordmark SVG when the site is in dark mode.
+     PaperMod sets data-theme="dark" on the <html> element (not a class),
+     so target the attribute. */
+  html[data-theme="dark"] .logo a img {
     filter: invert(1);
   }
 

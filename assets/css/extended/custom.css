@@ -56,3 +56,14 @@ strong, b { font-weight: 600; }
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
+
+/* Nav items in Instrument Serif italic so the header typography
+   echoes the wordmark. Tighter, more editorial header. */
+.menu a,
+#menu a,
+.nav ul li a {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  letter-spacing: 0.005em;
+}

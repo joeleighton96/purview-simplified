@@ -1,5 +1,13 @@
-{{/* Custom head extensions. Inverts the wordmark in dark mode and keeps
-     layout tidy alongside the theme toggle and menu. */}}
+{{/* Custom head extensions: font loading, wordmark sizing, and dark-mode
+     wordmark inversion. */}}
+
+{{/* Instrument Serif — used for headings across the site to echo the
+     wordmark. Preconnect keeps the request fast; display=swap falls back
+     to Georgia while the font loads so headings never go invisible. */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
 <style>
   /* Wordmark logo sizing and spacing */
   .logo a img {
@@ -20,5 +28,43 @@
     display: inline-flex;
     align-items: center;
     gap: 0;
+  }
+
+  /* Instrument Serif on all headings so every post/page visually ties
+     back to the wordmark. Regular weight for most headings; italic on
+     h1 (the most prominent heading per page) to echo the wordmark
+     directly. Body text stays in PaperMod's default sans-serif for
+     readable long-form prose. */
+  h1, h2, h3, h4, h5, h6,
+  .post-title,
+  .entry-header h1,
+  .entry-header h2,
+  .page-header h1,
+  .home-info h1,
+  .first-entry .entry-header h1 {
+    font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
+  }
+
+  /* Italic on the largest headings only, so they feel like an extension
+     of the wordmark without fatiguing the reader at subheading sizes. */
+  h1,
+  .post-title,
+  .entry-header h1,
+  .page-header h1,
+  .home-info h1,
+  .first-entry .entry-header h1 {
+    font-style: italic;
+  }
+
+  /* Instrument Serif is a display face — it looks best slightly larger
+     and with a touch more tracking than PaperMod's default headings. */
+  h1, .post-title, .entry-header h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.75rem;
   }
 </style>

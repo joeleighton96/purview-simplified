@@ -1,0 +1,58 @@
+/* =============================================================
+   Purview Simplified — body typography and surface overrides
+   Pairs with the heading rules in layouts/partials/extend_head.html.
+   Display: Instrument Serif. Body: IBM Plex Sans.
+   ============================================================= */
+
+/* Body typeface cascades to everything except headings */
+body {
+  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Generous, editorial sizing on post and page content */
+.post-content,
+.post-entry,
+.entry-content,
+.page-content {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Light-mode surface colours — warm off-white with near-black ink. */
+:root {
+  --theme: #F2F1ED;
+  --entry: #F2F1ED;
+  --primary: #1A1A1A;
+  --secondary: #4A4A48;
+  --tertiary: #D9D6CE;
+  --content: #1A1A1A;
+  --border: #D9D6CE;
+}
+
+/* Force warm cream across every wrapper and layout. Some PaperMod
+   list layouts paint their own background on .main / .archive /
+   section, which breaks surface consistency. !important ensures
+   our surface wins over anything further up the cascade. */
+html,
+body,
+main,
+.main,
+.archive,
+article,
+section,
+header,
+footer {
+  background-color: #F2F1ED !important;
+}
+
+/* Slightly richer strong weight so emphasis reads as emphasis */
+strong, b { font-weight: 600; }
+
+/* Editorial underline style on body links */
+.post-content a,
+.entry-content a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}

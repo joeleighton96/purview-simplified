@@ -16,12 +16,13 @@ minify:
   minifyOutput: true
 
 params:
+  defaultTheme: light
+  disableThemeToggle: true
   env: production
   title: "Purview Simplified"
   description: "Plain-English writing on Microsoft Purview and M365 compliance."
   keywords: [Purview, Microsoft 365, Compliance, DLP, Information Protection]
   author: "Joe Leighton"
-  defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
